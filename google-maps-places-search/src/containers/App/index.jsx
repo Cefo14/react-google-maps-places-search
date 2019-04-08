@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <GoogleMapsPlacesSearch
-          apiKey="AIzaSyCeNgYFZW2xqKNF5xItgLZAH-2MfSXBGSM "
+          apiKey="YOUR_API_KEY"
           displayMap
           geolocation
         />
