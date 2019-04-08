@@ -1,0 +1,31 @@
+.google-maps-map {
+    width: 100%;
+    height: 50vh;
+}
+
+.google-maps-search-box {
+    margin: 15px 0px;
+    padding: 5px 25px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px black;
+    font-size: 20px;
+}
+
+.google-maps-places-search__warapper {
+    position: relative;
+}
+
+.google-maps-places-search__warapper .google-maps-search-box__warapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.google-maps-search-box__warapper .google-maps-search-box {
+    width: 50%;
+    background-color: transparent;
+    border-bottom: solid 2px black;
+    color: #fff;
+}
