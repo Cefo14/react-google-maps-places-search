@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GoogleMapsPlacesSearch from '../../components/GoogleMapsPlacesSearch'
+import GoogleMapsPlacesSearch from '../../components/GoogleMapsPlacesSearch';
 import './App.css';
 
 class App extends Component {

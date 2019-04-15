@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const GoogleMapsSearchBox = ({ setRef }) => (
   <div className="google-maps-search-box">
@@ -10,9 +11,9 @@ const GoogleMapsSearchBox = ({ setRef }) => (
       ref={
         node => setRef(node)
       }
-      placeholder="Buscar Dirección..."
+      placeholder="Search place..."
     />
-    <FontAwesomeIcon icon="search" />
+    <FontAwesomeIcon icon={faSearch} />
   </div>
 );
 
