@@ -120,8 +120,8 @@ export default class GoogleMapsPlacesSearch extends Component {
     const searchBox = new window.google.maps.places.SearchBox(this.searchBox);
     const { onPlacesChanged } = this.props;
     /* do onPlacesChanged callback */
-    searchBox.addListener('places_changed', function placesChanged() {
-      const places = this.getPlaces();
+    searchBox.addListener('places_changed', () => {
+      const places = searchBox.getPlaces();
       onPlacesChanged(places);
     });
   }

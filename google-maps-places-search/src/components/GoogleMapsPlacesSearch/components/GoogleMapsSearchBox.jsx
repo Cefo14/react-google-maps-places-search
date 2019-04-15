@@ -1,15 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GoogleMapsSearchBox = ({ setRef }) => (
-  <input
-    type="text"
-    name="searchBox"
-    className="google-maps-search-box"
-    ref={
-      node => setRef(node)
-    }
-  />
+  <div className="google-maps-search-box">
+    <input
+      type="text"
+      name="searchBox"
+      ref={
+        node => setRef(node)
+      }
+      placeholder="Buscar Dirección..."
+    />
+    <FontAwesomeIcon icon="search" />
+  </div>
 );
 
 GoogleMapsSearchBox.propTypes = {
